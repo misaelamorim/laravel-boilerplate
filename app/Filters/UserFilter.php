@@ -8,6 +8,6 @@ class UserFilter extends QueryFilter
 
     public function email(string $value)
     {
-        $this->builder->where('email', 'ilike', "%$value%");
+        $this->builder->where('email', 'like', "%$value%");
     }
 }
